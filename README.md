@@ -73,6 +73,15 @@ Aprende a crear un asistente virtual para ordenar tacos!
 
 ![](assets/13.png)<br/> 
 
+<i><b> A partir de aquí, el manual se divide en 2 tipos de entrenamiento, elige el que te aparezca en la plataforma</i></b>
+<A href="#int"> Entrenando el Assistant con Intents</A><br/>
+<A href="#act"> Entrenando el Assistant con Actions</A><br/>
+
+
+# <A name="int"> Entrenando el Assistant con Intents </A> 
+
+
+# <A name="act"> Entrenando el Assistant con Actions </A>
 9. Pasamos al apartado “Actions” y damos clic en “New Action”.
 
 ![](assets/14.png)<br/> 
