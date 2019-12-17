@@ -73,53 +73,111 @@ Aprende a crear un asistente virtual para ordenar tacos!
 
 ![](assets/13.png)<br/> 
 
-<i><b> A partir de aquí, el manual se divide en 2 tipos de entrenamiento, elige el que te aparezca en la plataforma</i></b>
+<i><b> A partir de aquí, el manual se divide en 2 tipos de entrenamiento, elige el que te aparezca en la plataforma</i></b><br/>
+
 <A href="#int"> Entrenando el Assistant con Intents</A><br/>
 <A href="#act"> Entrenando el Assistant con Actions</A><br/>
 
 
 # <A name="int"> Entrenando el Assistant con Intents </A> 
+1. Basamos a nuestra ventana Diálogo y damos click en Create Dialog:
+![](assets/29.png)<br/> 
 
+2. Posteriormente daremos click en “Add node”
+
+![](assets/30.png)<br/> 
+
+3. Damos click al nodo creado y le ponemos el nombre de “Catalogo”:
+
+![](assets/31.png)<br/> 
+
+4. Damos click en el botón de Customize y habilitamos Multiple response:
+
+![](assets/32.png)<br/> 
+
+![](assets/33.png)<br/> 
+
+5. En el condicional seleccionamos la intención #Catalogo que creamos previamente.
+
+![](assets/34.png)<br/> 
+
+6. Agregamos debajo del texto “If assistant recognizes” la condición anything_else, y debajo del texto “Respond with” agregamos la respuesta que indique los productos que tiene la taquería:
+
+![](assets/35.png)<br/> 
+
+7. Damos click en Add response para agregar una nueva variación de respuesta: 
+
+![](assets/36.png)<br/> 
+
+8. Agregamos debajo del texto “If assistant recognizes” la condición @Taco:Pastor, y debajo del texto “Respond with” agregamos la respuesta que indique los si contamos con el producto indicado:
+
+![](assets/37.png)<br/> 
+
+9. Para probar nuestro asistente, la herramienta de IBM Watson Assistant proporciona una interfaz gráfica para demostrar el comportamiento del chatbot. En el borde superior izquierdo, dar click en Skills:
+
+![](assets/38.png)<br/> 
+
+10. En la pestaña Assistants, dar click en Create Assistant:
+
+![](assets/39.png)<br/> 
+
+11. En la siguiente pantalla, podemos nombrar a nuestro Asistente, así como también podremos darle una descripción. Es importante tener activada la casilla de Enable Preview Link. Al terminar dar click en Create Assistant:
+
+![](assets/40.png)<br/> 
+
+12.	Una vez creado nuestro Assistant, dar click en Add dialog skill:
+
+![](assets/41.png)<br/> 
+
+13. Seleccionar el Skill que acabamos de crear:
+
+![](assets/42.png)<br/> 
+
+14. El chatbot ha sido preparado para despliegue. Para previsualizarlo, dar click en Preview Link y después en el enlace que se proporciona:
+
+![](assets/43.png)<br/> 
+
+![](assets/44.png)<br/> 
 
 # <A name="act"> Entrenando el Assistant con Actions </A>
-9. Pasamos al apartado “Actions” y damos clic en “New Action”.
+1. Pasamos al apartado “Actions” y damos clic en “New Action”.
 
 ![](assets/14.png)<br/> 
 
-10. Le damos un nombre a nuestra primera acción “Saludo” y en “Customer says” escribimos al menos 10 ejemplos diferentes de saludos del usuario.
+2. Le damos un nombre a nuestra primera acción “Saludo” y en “Customer says” escribimos al menos 10 ejemplos diferentes de saludos del usuario.
 
 ![](assets/15.png)<br/> 
 <i><b>Recuerda que el usuario puede escribir con faltas ortográficas.</i></b>
 
-11. En “Assistant responds”, vamos a dar las posibles respuestas que dará nuestro asistente, dando un salto de línea al terminar cada ejemplo (recuerda que esto es lo que verá el usuario, así que trata de mantener un formato que corresponda al tipo de usuario que interactuará con el asistente, a demás de una buena ortografía). Una vez hecho esto, damos clic en “random” para que nuestro asistente mande las diferentes respuestas de forma aleatoria.
+3. En “Assistant responds”, vamos a dar las posibles respuestas que dará nuestro asistente, dando un salto de línea al terminar cada ejemplo (recuerda que esto es lo que verá el usuario, así que trata de mantener un formato que corresponda al tipo de usuario que interactuará con el asistente, a demás de una buena ortografía). Una vez hecho esto, damos clic en “random” para que nuestro asistente mande las diferentes respuestas de forma aleatoria.
 
 ![](assets/16.png)<br/> 
 
-12. En “Then assistant should”, dejamos el valor “Wait for reply” y damos clic en el botón “Finished”.
+4. En “Then assistant should”, dejamos el valor “Wait for reply” y damos clic en el botón “Finished”.
 
 ![](assets/17.png)<br/> 
 
-13. De la misma forma, creamos la acción “Menú”.
+5. De la misma forma, creamos la acción “Menú”.
 
 ![](assets/18.png)<br/> 
 
-14. Damos click al nodo creado y le ponemos el nombre de “Ubicación”, le damos diez ejemplos de entradas de usuarios y en “Assistant responds”, seleccionamos los tres puntos de la derecha (menú de hamburguesa) y seleccionamos la opción “Open context editor”
+6. Damos click al nodo creado y le ponemos el nombre de “Ubicación”, le damos diez ejemplos de entradas de usuarios y en “Assistant responds”, seleccionamos los tres puntos de la derecha (menú de hamburguesa) y seleccionamos la opción “Open context editor”
 
 ![](assets/19.png)<br/> 
 
-15. En variable escribimos “BANDERA_UBICACIÓN” (El “$” está por default.) y en valor escribimos “TRUE”. En donde dice “Assistant responds” escribimos un part de variaciones de respuesta, y en el apartedo “Then assistant should”, mantenemos el valor “Wait for reply” y damos clic en “Finished”
+7. En variable escribimos “BANDERA_UBICACIÓN” (El “$” está por default.) y en valor escribimos “TRUE”. En donde dice “Assistant responds” escribimos un part de variaciones de respuesta, y en el apartedo “Then assistant should”, mantenemos el valor “Wait for reply” y damos clic en “Finished”
 
 ![](assets/20.png)<br/> 
 
-16. Una vez de vuelta en las acciones de nuestro skill de diálogo, damos clic en la nave espacial del menú desplegable del lado izquierdo (“Go live”)
+8. Una vez de vuelta en las acciones de nuestro skill de diálogo, damos clic en la nave espacial del menú desplegable del lado izquierdo (“Go live”)
 
 ![](assets/21.png)<br/> 
 
-17. Una vez que visualicemos los skills de diálogo que tenemos, damos clic en los tres puntos que se encuentran en la esquina superior derecha de nuestro skill (menú de hamburguesa) y damos clic en “View API Details”
+9. Una vez que visualicemos los skills de diálogo que tenemos, damos clic en los tres puntos que se encuentran en la esquina superior derecha de nuestro skill (menú de hamburguesa) y damos clic en “View API Details”
 
 ![](assets/22.png)<br/> 
 
-18. A continuación, podremos visualizar las credenciales del servicio.
+10. A continuación, podremos visualizar las credenciales del servicio.
 
 ![](assets/23.png)<br/> 
 
