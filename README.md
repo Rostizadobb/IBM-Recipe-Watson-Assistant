@@ -80,7 +80,7 @@ Aprende a crear un asistente virtual para ordenar tacos!
 10. Le damos un nombre a nuestra primera acción “Saludo” y en “Customer says” escribimos al menos 10 ejemplos diferentes de saludos del usuario.
 
 ![](assets/15.png)<br/> 
-<i><b>Recuerda que el usuario puede escribir con faltas ortográficas.<i/><b/>
+<i><b>Recuerda que el usuario puede escribir con faltas ortográficas.</i></b>
 
 11. En “Assistant responds”, vamos a dar las posibles respuestas que dará nuestro asistente, dando un salto de línea al terminar cada ejemplo (recuerda que esto es lo que verá el usuario, así que trata de mantener un formato que corresponda al tipo de usuario que interactuará con el asistente, a demás de una buena ortografía). Una vez hecho esto, damos clic en “random” para que nuestro asistente mande las diferentes respuestas de forma aleatoria.
 
